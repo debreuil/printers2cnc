@@ -1,0 +1,7 @@
+This is an in-progress project to convert printers/scanners into cnc machines using the Papilio.
+Targets printers with DC motors and linear encoders to measure distance (not steppers).
+PCB is for Eagle from Cadsoft and uses custom parts (should be included afaik).
+Code is in VHDL.
+
+http://papilio.cc/
+http://www.cadsoft.de/download.htm
