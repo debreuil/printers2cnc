@@ -1,0 +1,9 @@
+Papilio board (xilinx fpga based board)
+http://papilio.cc/
+
+TA7291P - TOSHIBA BIPOLAR LINEAR INTEGRATED CIRCUIT
+http://www.datasheetcatalog.com/datasheets_pdf/T/A/7/2/TA7291P.shtml
+http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=TA7291PO-ND
+(used to drive a DC printer motor bidirectionally)
+
+Quad 7seg, 12pin (generic 7 seg display with 4 digits, used to show where print head is)

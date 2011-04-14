@@ -1,0 +1,145 @@
+##################################################################################
+## BPC3003_2.03+.ucf
+##
+## Author: Jack Gassett
+##
+## Details: http://gadgetforge.gadgetfactory.net/gf/project/butterfly_one/
+##
+## Contains assignment and iostandard information for
+## all used pins as well as timing and area constraints for Papilio One 2.03 and higher boards. Papilio One boards started using 32Mhz oscillators at version 2.02 and above.
+##
+##################################################################################
+
+# Crystal Clock - use 32MHz onboard oscillator
+NET "clk" LOC = "P89" | IOSTANDARD = LVCMOS25 | PERIOD = 31.25ns ;
+
+# motor control
+NET "MOT_A" LOC = "P70" ;	#Wing1 A<12>
+NET "MOT_B" LOC = "P79" ;	#Wing1 A<13>
+
+# encoder
+NET "ENC_A" LOC = "P84" ;	#Wing1 A<14>
+NET "ENC_B" LOC = "P86" ;	#Wing1 A<15>
+
+# QUAD seven seg
+NET "DIGIT<0>" LOC = "P40"; 	#11	rightmost
+NET "DIGIT<1>" LOC = "P26"; 	#8	
+NET "DIGIT<2>" LOC = "P23";	#7
+NET "DIGIT<3>" LOC = "P53";	#5		leftmost
+
+NET "SEG<0>" LOC = "P35";		#10	A
+NET "SEG<1>" LOC = "P18";		#6		B
+NET "SEG<2>" LOC = "P60";		#3		C
+NET "SEG<3>" LOC = "P65";		#1		D
+NET "SEG<4>" LOC = "P67";		#0		E
+NET "SEG<5>" LOC = "P33";		#9		F
+NET "SEG<6>" LOC = "P57";		#4		G
+NET "SEG<7>" LOC = "P62";		#2		DP
+
+# LED
+
+NET "LED<0>" LOC = "P16" ;	
+NET "LED<1>" LOC = "P12" ;		 
+#NET "LED<2>" LOC = "P10" ;	
+#NET "LED<3>" LOC = "P5" ;  
+
+
+#NET "DIGIT<0>" LOC = "P67"; 	#11	rightmost
+#NET "DIGIT<1>" LOC = "P60"; 	#8	
+#NET "DIGIT<2>" LOC = "P57";	#7
+#NET "DIGIT<3>" LOC = "P40";	#5		leftmost
+#
+#NET "SEG<0>" LOC = "P65";		#10	A
+#NET "SEG<1>" LOC = "P53";		#6		B
+#NET "SEG<2>" LOC = "P33";		#3		C
+#NET "SEG<3>" LOC = "P23";		#1		D
+#NET "SEG<4>" LOC = "P18";		#0		E
+#NET "SEG<5>" LOC = "P62";		#9		F
+#NET "SEG<6>" LOC = "P35";		#4		G
+#NET "SEG<7>" LOC = "P26";		#2		DP
+
+	
+# LEDs
+#NET "LED<7>" LOC = "P91" ;		
+#NET "LED<6>" LOC = "P94" ;  
+#NET "LED<5>" LOC = "P98" ; 	
+#NET "LED<4>" LOC = "P3" ;  		
+#NET "LED<3>" LOC = "P5" ;  	 
+#NET "LED<2>" LOC = "P10" ;	
+#NET "LED<1>" LOC = "P12" ;	
+#NET "LED<0>" LOC = "P16" ;	
+
+# Wing1 Column A
+
+#NET "DIGIT<0>" LOC = "P67"; 	#11	rightmost
+#NET "DIGIT<1>" LOC = "P60"; 	#8	
+#NET "DIGIT<2>" LOC = "P57";	#7
+#NET "DIGIT<3>" LOC = "P40";	#5		leftmost
+#
+#NET "SEG<0>" LOC = "P65";		#10	A
+#NET "SEG<1>" LOC = "P53";		#6		B
+#NET "SEG<2>" LOC = "P33";		#3		C
+#NET "SEG<3>" LOC = "P23";		#1		D
+#NET "SEG<4>" LOC = "P18";		#0		E
+#NET "SEG<5>" LOC = "P62";		#9		F
+#NET "SEG<6>" LOC = "P35";		#4		G
+#NET "SEG<7>" LOC = "P26";		#2		DP
+
+
+#NET "W1A<0>" LOC = "P18" ;	
+#NET "W1A<1>" LOC = "P23" ;  	
+#NET "W1A<2>" LOC = "P26" ;  	
+#NET "W1A<3>" LOC = "P33" ;  	
+#NET "W1A<4>" LOC = "P35" ;  	
+#NET "W1A<5>" LOC = "P40" ;  	
+#NET "W1A<6>" LOC = "P53" ;  	
+#NET "W1A<7>" LOC = "P57" ;  	
+#NET "W1A<8>" LOC = "P60" ;  	
+#NET "W1A<9>" LOC = "P62" ;   
+#NET "W1A<10>" LOC = "P65" ;	
+#NET "W1A<11>" LOC = "P67" ;	
+#NET "W1A<12>" LOC = "P70" ;	
+#NET "W1A<13>" LOC = "P79" ;	
+#NET "W1A<14>" LOC = "P84" ;	
+#NET "W1A<15>" LOC = "P86" ;	
+
+# Wing1 Column B
+#NET "W1B<0>" LOC = "P85" ;	
+#NET "W1B<1>" LOC = "P83" ;	
+#NET "W1B<2>" LOC = "P78" ;	
+#NET "W1B<3>" LOC = "P71" ;	
+#NET "W1B<4>" LOC = "P68" ;	
+#NET "W1B<5>" LOC = "P66" ;	
+#NET "W1B<6>" LOC = "P63" ;	
+#NET "W1B<7>" LOC = "P61" ;	
+#NET "W1B<8>" LOC = "P58" ;	
+#NET "W1B<9>" LOC = "P54" ;	
+#NET "W1B<10>" LOC = "P41" ;	
+#NET "W1B<11>" LOC = "P36" ;	
+#NET "W1B<12>" LOC = "P34" ;	
+#NET "W1B<13>" LOC = "P32" ;	
+#NET "W1B<14>" LOC = "P25" ;	
+#NET "W1B<15>" LOC = "P22" ;	
+
+# Wing2 Column C
+#NET "LED<7>" LOC = "P91" ;		
+#NET "LED<6>" LOC = "P94" ;  
+#NET "LED<5>" LOC = "P98" ; 	
+#NET "LED<4>" LOC = "P3" ;  		
+#NET "LED<3>" LOC = "P5" ;  	 
+#NET "LED<2>" LOC = "P10" ;	
+#NET "LED<1>" LOC = "P12" ;	
+#NET "LED<0>" LOC = "P16" ;	
+
+#NET "PB<7>" LOC = "P92" ;  	
+#NET "PB<6>" LOC = "P95" ;  	 	
+#NET "PB<5>" LOC = "P2" ;  
+#NET "PB<4>" LOC = "P4" ;  
+#NET "PB<3>" LOC = "P9" ;  
+#NET "PB<2>" LOC = "P11" ;	
+#NET "PB<1>" LOC = "P15" ;	
+#NET "PB<0>" LOC = "P17" ;	
+
+## RS232
+#NET "rx"  LOC = "P88" | IOSTANDARD = LVCMOS25 ;
+#NET "tx"  LOC = "P90" | IOSTANDARD = LVCMOS25 | DRIVE = 4 | SLEW = SLOW ;
